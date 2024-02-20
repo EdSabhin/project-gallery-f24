@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import "../components/Slider"
 ---
 
 <html lang="en">
@@ -11,7 +12,77 @@ import '../styles/global.css'
 		<title>Ed Sabhin Project Gallery</title>
 	</head>
 	<body>
-		<h1 class="">Ed Sabhin</h1>
-		<h2 class="">Project Gallery</h2>
+		<header>
+      <nav class="w-full flex justify-center gap-8 text-white text-5xl bg-black">
+        <a href="Home" class="cormorant-sc-semibold">Home</a>
+          <a href="Contact" class=" cormorant-sc-semibold">Contact</a>
+          <a href="Info" class=" cormorant-sc-semibold">Info</a>
+      </nav>
+    </header>
+
+  <!-- Carousel -->
+  <div class="w-full h-full">
+    <div>
+      <div class="item">
+        <img src="./assets/images/img1.jpg" alt="" class="w-full h-full">
+        <div>
+          <div>Author</div>
+          <div>Design Slider</div>
+          <div>Project</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis, dicta quos impedit rerum vel magni enim velit mollitia nisi architecto quam atque aperiam error facilis rem dolorem natus praesentium.</div>
+          <div>
+            <button>See More</button>
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/images/img2.jpg" alt="">
+        <div>
+          <div>Author</div>
+          <div>Design Slider</div>
+          <div>Project</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis, dicta quos impedit rerum vel magni enim velit mollitia nisi architecto quam atque aperiam error facilis rem dolorem natus praesentium.</div>
+          <div>
+            <button>See More</button>
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/images/img3.jpg" alt="">
+        <div>
+          <div>Author</div>
+          <div>Design Slider</div>
+          <div>Project</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis, dicta quos impedit rerum vel magni enim velit mollitia nisi architecto quam atque aperiam error facilis rem dolorem natus praesentium.</div>
+          <div>
+            <button>See More</button>
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/images/img4.jpg" alt="">
+        <div>
+          <div>Author</div>
+          <div>Design Slider</div>
+          <div>Project</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis, dicta quos impedit rerum vel magni enim velit mollitia nisi architecto quam atque aperiam error facilis rem dolorem natus praesentium.</div>
+          <div>
+            <button>See More</button>
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+    <script src="../components/Slider.js"></script>
 	</body>
 </html>
