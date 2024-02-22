@@ -1,13 +1,19 @@
 import React from 'react'
 
-const SliderCard = () => {
+interface sliderCardProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+const SliderCard = ({image, title, description}:sliderCardProps) => {
   return (
     <div className='w-60 h-64 relative rounded-lg cursor-pointer'>
-      <img src="/assets/images/img1.jpg" className='w-60 h-64 object-cover rounded-tl-3xl rounded-br-3xl rounded' />
+      <img src={image} className='w-60 h-64 object-cover rounded-tl-3xl rounded-br-3xl rounded' />
       <div className="absolute bottom-0 px-4 pb-4">
         <h2 className="text-base cormorant-infant-medium-italic 
-            text-rose-500">OBERON'S LAIR</h2>
-        <p className="text-base cormorant-infant-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            text-rose-500">{title}</h2>
+        <p className="text-base cormorant-infant-regular">{description}</p>
       </div>
     </div>
   )
