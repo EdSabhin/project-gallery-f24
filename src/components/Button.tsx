@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Button = () => {
+interface ButtonProps {
+  text: string;
+}
+
+const Button = ({text}:ButtonProps) => {
   return (
-    <div>Button</div>
+    <>
+      <button className='w-[8rem] h-[3rem] text-lg cormorant-infant-light border-r border-r-rose-600 hover:border border-rose-900 rounded-md active:scale-105 shadow-xl hover:scale-105 transition duration-100'>{text}</button>
+    </>
   )
 }
 
