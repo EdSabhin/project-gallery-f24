@@ -1,12 +1,13 @@
 import React from 'react'
 import Slider from "./Slider"
 import Button from './Button'
-import Header from './Header'
+import Header from './DisplayContent'
+import DisplayContent from './DisplayContent'
 
 const Hero = () => {
   return (
     <div className='w-full h-max flex flex-col pt-8 pb-12 px-16 gap-8'>
-      <Header />
+      <DisplayContent />
       <div className='flex flex-col'>
         <div className='flex mt-6 mb-12 gap-12'>
         <div className='flex gap-8 mr-72'>

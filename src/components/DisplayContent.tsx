@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const DisplayContent = () => {
   return (
     <div>
       <div className='flex flex-col justify-center'>
@@ -13,4 +13,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default DisplayContent
