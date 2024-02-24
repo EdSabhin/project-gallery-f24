@@ -240,7 +240,7 @@ header a {
   z-index: 1000;
   width: 0%;
   height: 3px;
-  background-color: #f1683a;
+  background-image: linear-gradient(to bottom right, #e11d48, #2213a8);
   left: 0;
   top: 0;
 }
@@ -303,7 +303,7 @@ header a {
     opacity: 0;
   }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 660px) {
   .carousel .list .item .content {
     padding-right: 0;
   }

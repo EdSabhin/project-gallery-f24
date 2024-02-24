@@ -3,6 +3,7 @@ import React from 'react'
 const DisplayContent = () => {
   return (
     <div>
+      <img src="" alt="" className="" />
       <div className='flex flex-col justify-center'>
         <h1 className='text-3xl cormorant-sc-regular '>Ed Sabhin</h1>
         <h2 className='pb-4 text-5xl cormorant-sc-semibold'>Project Gallery</h2>

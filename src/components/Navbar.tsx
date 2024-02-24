@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-      <nav className='w-full h-32 flex justify-start items-center px-16 gap-24 cormorant-sc-semibold'>
+      <nav className='w-full cormorant-sc-semibold'>
         <a href="/" className='text-6xl hover:text-teal-300'>Home</a>
         <a href="/about" className='text-6xl hover:text-teal-300'>About</a>
         <div className='flex justify-start pt-4 px-12 gap-20 rounded-md'>

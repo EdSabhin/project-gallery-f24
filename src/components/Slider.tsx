@@ -5,21 +5,8 @@ import ArrowButton from './ArrowButton'
 import { projects } from "../utils/projects"
 
 const Slider = () => {
-  const handleNext = () => {
-    console.log("Next button clicked");
-  };
-
-  const handlePrev = () => {
-    console.log("Previous button clicked"); 
-  };
-  
-
   return (
-    <div className="w-[85%] flex">
-      <div className='w-1/7 flex items-center pl-24 mr-32 gap-7'>
-        <ArrowButton direction="&lt;" onClick={()=>handleNext}/>
-        <ArrowButton direction="&gt;" onClick={()=>handlePrev}/>
-      </div>
+    <div className="thumbnail w-[85%] flex">
       <div className="flex gap-8">
         {Object.values(projects).map((project, index) => (
         <SliderCard
