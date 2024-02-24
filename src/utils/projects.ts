@@ -1,7 +1,7 @@
 interface Projects {
   image: string;
-  author: string
-  title: string
+  author: string;
+  title: string;
   projectTitle: string;
   description: string;
 }
@@ -18,7 +18,7 @@ export const projects: Projects[] = [
     image: "/assets/images/img2.jpg",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "PROJECT 2",
+    projectTitle: "Project 2",
     description: "Description of Project 2",
   },
   {

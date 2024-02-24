@@ -12,7 +12,7 @@ const Slider = () => {
         <SliderCard
           key={index}
           image={project.image}
-          title={project.title}
+          title={(project.projectTitle).toUpperCase()}
           description={project.description}
         />
       ))}
