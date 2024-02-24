@@ -7,7 +7,7 @@ interface ButtonProps {
 const Button = ({text}:ButtonProps) => {
   return (
     <>
-      <button className='w-[8rem] h-[3rem] text-lg cormorant-infant-light border-r hover:text-teal-300 border-r-rose-600 border-rose-900 hover:bg-gradient-to-br hover:from-rose-950 from-75% hover:to-rose-900 rounded-md shadow-xl transition duration-200'>{text}</button>
+      <button className='buttonTransparent w-24 h-12 lg:w-[8rem] lg:h-[3rem] text-l text-stone-100 cormorant-infant-light  hover:font-semibold hover:text-stone-700 border-r-2 border-r-stone-100  hover:bg-gradient-to-br hover:from-stone-300 from-55% hover:to-indigo-200  rounded-md shadow-xl transition duration-200'>{text}</button>
     </>
   )
 }

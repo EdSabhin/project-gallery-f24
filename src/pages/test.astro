@@ -17,27 +17,20 @@ import ArrowButton from "../components/ArrowButton";
   </head>
   <body>
     <Navbar />
-
-    <!-- carousel -->
     <div class="carousel">
-      <!-- list item -->
       <div class="list">
         <DisplayTwo />
       </div>
-
-      <!-- list thumbnail -->
-      <Slider />
-
-      <!-- next prev -->
-      <div class="arrows">
+      <div
+        class="w-[30%] lg:w-[10%] flex justify-center gap-6 lg:gap-6 absolute top-[63%] lg:top-[70%] left-[9.2%] lg:right-[60%] z-10"
+      >
         <ArrowButton id="prev" direction="<" aria-label="Previous Slide" />
         <ArrowButton id="next" direction=">" aria-label="Next Slide" />
       </div>
-
-      <!-- time running -->
+      <Slider />
+      <!-- running border effect -->
       <div class="time"></div>
     </div>
-
     <script src="../app.js"></script>
   </body>
 </html>
