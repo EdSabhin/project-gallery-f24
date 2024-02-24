@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
 
-body {
-  margin: 0;
-  background-color: #000;
-  color: #eee;
-  font-family: Poppins;
-  font-size: 12px;
+nav {
 }
+
 a {
   text-decoration: none;
 }
@@ -28,7 +24,6 @@ header a {
 /* carousel */
 .carousel {
   height: 100vh;
-  margin-top: -50px;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -193,7 +188,7 @@ header a {
 /* for background image*/
 .carousel.next .list .item:nth-child(1) img {
   width: 150px;
-  height: 220px;
+  height: 100px;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -240,7 +235,7 @@ header a {
   z-index: 1000;
   width: 0%;
   height: 3px;
-  background-image: linear-gradient(to bottom right, #e11d48, #2213a8);
+  background-image: linear-gradient(to bottom right, #f8e76c, #d6d0c0);
   left: 0;
   top: 0;
 }
