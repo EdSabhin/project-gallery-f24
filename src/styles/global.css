@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
 
+/* custom Tailwind classes */
+.buttonTransparent {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(219, 225, 227, 0.7),
+    rgba(177, 166, 138, 0.4)
+  );
+}
+
+.cvGradient {
+  background-image: linear-gradient(
+    135deg,
+    hsl(341deg 100% 9%) 0%,
+    hsl(348deg 46% 17%) 7%,
+    hsl(356deg 29% 24%) 14%,
+    hsl(2deg 21% 32%) 22%,
+    hsl(7deg 16% 40%) 32%,
+    hsl(11deg 12% 48%) 42%,
+    hsl(15deg 11% 56%) 55%,
+    hsl(18deg 11% 64%) 70%,
+    hsl(21deg 9% 74%) 85%,
+    hsl(24deg 6% 83%) 100%
+  );
+}
+
 /* carousel */
 .carousel {
   height: 100vh;
@@ -20,10 +45,10 @@
 }
 .carousel .list .item .content {
   position: absolute;
-  top: 10%;
+  top: 9%;
   width: 1140px;
-  max-width: 80%;
-  left: 50%;
+  max-width: 70%;
+  left: 45%;
   transform: translateX(-50%);
   box-sizing: border-box;
 }
@@ -33,44 +58,6 @@
   border: 1px solid #fff;
   color: #eee;
 } */
-
-.buttonTransparent {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(219, 225, 227, 0.7),
-    rgba(177, 166, 138, 0.4)
-  );
-}
-
-/* thumbnail */
-.thumbnail {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  width: max-content;
-  z-index: 100;
-  display: flex;
-  gap: 20px;
-}
-.thumbnail .item {
-  width: 150px;
-  height: 220px;
-  flex-shrink: 0;
-  position: relative;
-}
-.thumbnail .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.thumbnail .item .content {
-  color: #fff;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-}
 
 /* animation */
 .carousel .list .item:nth-child(1) {
@@ -93,6 +80,17 @@
     opacity: 1;
   }
 }
+
+/* Add this CSS to hide content after animation ends */
+.carousel .list .item .content {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel .list .item.hide .content {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
 .carousel .list .item:nth-child(1) .content .title {
   animation-delay: 1.2s !important;
 }
@@ -114,8 +112,7 @@
   position: absolute;
   bottom: 50px;
   left: 50%;
-  border-radius: 30px;
-  animation: showImage 0.5s linear 1 forwards;
+  animation: showImage 0.7s linear 1 forwards;
 }
 @keyframes showImage {
   to {
@@ -123,14 +120,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0;
   }
 }
 
 /* for thumbnail*/
 .carousel.next .thumbnail .item:nth-last-child(1) {
   overflow: hidden;
-  animation: showThumbnail 0.5s linear 1 forwards;
+  animation: showThumbnail 1s linear 1 forwards;
 }
 .carousel.prev .list .item img {
   z-index: 100;
@@ -142,7 +138,7 @@
   }
 }
 .carousel.next .thumbnail {
-  animation: effectNext 0.5s linear 1 forwards;
+  animation: effectNext 1s linear 1 forwards;
 }
 
 @keyframes effectNext {
@@ -156,7 +152,7 @@
   position: absolute;
   z-index: 1000;
   width: 0%;
-  height: 4px;
+  height: 6px;
   background-image: linear-gradient(to bottom right, #0b0b08, #f3eee1);
   left: 0;
   top: 0;
@@ -214,14 +210,6 @@
   to {
     transform: translateY(-150px);
     opacity: 0;
-  }
-}
-@media screen and (max-width: 60px) {
-  .carousel .list .item .content {
-    padding-right: 60;
-  }
-  .carousel .list .item .content .title {
-    font-size: 30px;
   }
 }
 

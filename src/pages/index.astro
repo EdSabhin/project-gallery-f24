@@ -1,5 +1,10 @@
 ---
 import "../styles/global.css";
+
+import Navbar from "../components/Navbar";
+import TitlesDisplay from "../components/TitlesDisplay";
+import Slider from "../components/Slider";
+import ArrowButton from "../components/ArrowButton";
 ---
 
 <html lang="en">
@@ -10,141 +15,21 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Ed Sabhin Project Gallery</title>
   </head>
-  <body class="">
-    <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/test">Test</a>
-        <a href="/about">About</a>
-      </nav>
-    </header>
-
-    <!-- carousel -->
+  <body>
     <div class="carousel">
-      <!-- list item -->
       <div class="list">
-        <div class="item">
-          <img src="/assets/images/img1.jpg" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="itemDescription">
-              <!-- lorem 50 -->
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi,
-              rem magnam nesciunt minima placeat, itaque eum neque officiis unde,
-              eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-              doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora
-              at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img2.jpg" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="itemDescription">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img3.jpg" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="itemDescription">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img4.jpg" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="itemDescription">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
+        <TitlesDisplay />
       </div>
-      <!-- list thumnail -->
-      <div class="thumbnail">
-        <div class="item">
-          <img src="/assets/images/img1.jpg" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img2.jpg" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img3.jpg" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/img4.jpg" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
+      <div
+        class="w-[28%] lg:w-[10%] flex justify-center gap-6 lg:gap-6 absolute top-[61%] lg:top-[64%] lg:right-[55%] ml-[10%] z-10"
+      >
+        <ArrowButton id="prev" direction="<" aria-label="Previous Slide" />
+        <ArrowButton id="next" direction=">" aria-label="Next Slide" />
       </div>
-      <!-- next prev -->
-
-      <div class="arrows">
-        <button id="prev" aria-label="Previous Slide">&lt;</button>
-        <button id="next" aria-label="Next Slide">&gt;</button>
-      </div>
-      <!-- time running -->
+      <Slider />
+      <!-- running border effect -->
       <div class="time"></div>
     </div>
-
     <script src="../app.js"></script>
   </body>
 </html>
