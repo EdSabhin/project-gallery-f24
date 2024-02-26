@@ -25,7 +25,6 @@
   );
 }
 
-/* carousel */
 .carousel {
   height: 100vh;
   width: 100vw;
@@ -45,19 +44,72 @@
 }
 .carousel .list .item .content {
   position: absolute;
-  top: 9%;
+  top: 10%;
   width: 1140px;
-  max-width: 70%;
-  left: 45%;
+  max-width: 80%;
+  left: 50%;
   transform: translateX(-50%);
+  padding-right: 30%;
   box-sizing: border-box;
 }
 
+/*TOPIC FIX*/
+.carousel .list .item .title,
+.carousel .list .item .topic {
+  font-size: 3.2em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+/* Optional Secondary Button*/
 /* .carousel .list .item .buttons button:nth-child(2) {
   background-color: transparent;
   border: 1px solid #fff;
   color: #eee;
 } */
+
+/* thumbnail */
+.thumbnail {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.thumbnail .item .content {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+/* arrows */
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  z-index: 100;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
 /* animation */
 .carousel .list .item:nth-child(1) {
@@ -65,6 +117,7 @@
 }
 
 /* animation text in first item */
+
 .carousel .list .item:nth-child(1) .content .author,
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
@@ -80,17 +133,6 @@
     opacity: 1;
   }
 }
-
-/* Add this CSS to hide content after animation ends */
-.carousel .list .item .content {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.carousel .list .item.hide .content {
-  transform: translateY(50px);
-  opacity: 0;
-}
-
 .carousel .list .item:nth-child(1) .content .title {
   animation-delay: 1.2s !important;
 }
@@ -103,16 +145,15 @@
 .carousel .list .item:nth-child(1) .content .buttons {
   animation-delay: 1.8s !important;
 }
-
 /* create animation when next click */
-/* for background image*/
 .carousel.next .list .item:nth-child(1) img {
   width: 150px;
-  height: 100px;
+  height: 220px;
   position: absolute;
   bottom: 50px;
   left: 50%;
-  animation: showImage 0.7s linear 1 forwards;
+  border-radius: 30px;
+  animation: showImage 0.5s linear 1 forwards;
 }
 @keyframes showImage {
   to {
@@ -120,13 +161,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 0;
   }
 }
 
-/* for thumbnail*/
 .carousel.next .thumbnail .item:nth-last-child(1) {
   overflow: hidden;
-  animation: showThumbnail 1s linear 1 forwards;
+  animation: showThumbnail 0.5s linear 1 forwards;
 }
 .carousel.prev .list .item img {
   z-index: 100;
@@ -138,7 +179,7 @@
   }
 }
 .carousel.next .thumbnail {
-  animation: effectNext 1s linear 1 forwards;
+  animation: effectNext 0.5s linear 1 forwards;
 }
 
 @keyframes effectNext {
@@ -148,12 +189,13 @@
 }
 
 /* running time */
+
 .carousel .time {
   position: absolute;
   z-index: 1000;
   width: 0%;
-  height: 6px;
-  background-image: linear-gradient(to bottom right, #0b0b08, #f3eee1);
+  height: 3px;
+  background-color: #f1683a;
   left: 0;
   top: 0;
 }
@@ -172,6 +214,7 @@
 }
 
 /* prev click */
+
 .carousel.prev .list .item:nth-child(2) {
   z-index: 2;
 }
@@ -197,7 +240,10 @@
   opacity: 0;
   animation: showThumbnail 0.5s linear 1 forwards;
 }
-
+.carousel.next .arrows button,
+.carousel.prev .arrows button {
+  pointer-events: none;
+}
 .carousel.prev .list .item:nth-child(2) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
@@ -210,6 +256,14 @@
   to {
     transform: translateY(-150px);
     opacity: 0;
+  }
+}
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    padding-right: 0;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
   }
 }
 
