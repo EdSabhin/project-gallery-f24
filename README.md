@@ -1,5 +1,5 @@
 # Astro Starter Kit: Minimal
-
+https://github.com/HoanghoDev/slider_1/blob/main/style.css#L144
 ```sh
 npm create astro@latest -- --template minimal
 ```
