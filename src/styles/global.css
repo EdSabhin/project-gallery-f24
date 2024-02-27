@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
 
 /* custom Tailwind classes */
-.buttonTransparent {
+.button-transparent {
   background-image: linear-gradient(
     to bottom right,
     rgba(219, 225, 227, 0.7),
@@ -9,7 +9,13 @@
   );
 }
 
-.cvGradient {
+.gradient-border {
+  /* Set the gradient border */
+  border-image: linear-gradient(to right, #d6cfb7, #7171bd);
+  border-image-slice: 1;
+}
+
+.gradient-cv {
   background-image: linear-gradient(
     135deg,
     hsl(341deg 100% 9%) 0%,
@@ -79,16 +85,14 @@
   gap: 20px;
 }
 .thumbnail .item {
-  width: 150px;
-  height: 220px;
+  width: 170px;
+  height: 240px;
   flex-shrink: 0;
   position: relative;
 }
 .thumbnail .item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
 }
 .thumbnail .item .content {
   color: #fff;
@@ -139,16 +143,20 @@
   position: absolute;
   bottom: 50px;
   left: 50%;
-  border-radius: 30px;
+
   animation: showImage 0.5s linear 1 forwards;
 }
 @keyframes showImage {
+  from {
+    opacity: 0.3;
+  }
   to {
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 0;
+    opacity: 1;
   }
 }
 
@@ -212,13 +220,19 @@
   bottom: 0;
   left: 0;
 }
+
 @keyframes outFrame {
+  from {
+    opacity: 0.3;
+  }
   to {
-    width: 150px;
-    height: 220px;
+    width: 170px;
+    height: 240px;
     bottom: 50px;
     left: 50%;
-    border-radius: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    opacity: 1;
   }
 }
 

@@ -1,15 +1,18 @@
 import React from 'react'
+import CardButton from './CardButton';
 
 interface sliderCardProps {
   image: string;
   title: string;
   description: string;
+  href: string;
 }
 
-const SliderCard = ({image, title, description}:sliderCardProps) => {
+const SliderCard = ({image, title, description, href}:sliderCardProps) => {
   return (
-    <div className='item w-40 h-64 relative rounded-lg'>
-      <img src={image} className='w-60 h-64 object-cover rounded-tl-3xl rounded-br-3xl rounded' />
+    <div className='item'>
+      <CardButton href={href} text='View Project' className="absolute left-[0%] rounded-tl-3xl  rounded"/>  
+      <img src={image} className=' object-cover rounded-tl-3xl rounded-br-3xl rounded' />
       <div className="absolute bottom-0 px-4 pb-4">
         <h2 className="title text-base cormorant-infant-medium-italic 
             text-rose-500">{title}</h2>
