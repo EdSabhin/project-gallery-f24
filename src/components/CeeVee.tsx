@@ -26,7 +26,7 @@ const CeeVee = () => {
       {/* Contact */}
       <div className="flex flex-col">
         <div className='w-max gradient-border-cv border-b-4 pb-1 mt-3 mb-3 kode-mono-regular flex justify-start gap-8'>
-          <h3>CONTACT</h3>
+          <h3>SAY HELLO</h3>
           <h3>01</h3>
         </div>  
         <ul className="kode-mono-light flex flex-col gap-3 mb-10">
