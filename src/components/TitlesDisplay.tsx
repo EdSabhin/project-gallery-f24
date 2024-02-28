@@ -17,8 +17,7 @@ const DisplayTwo = () => {
             </h2>
             <p className='itemDescription text-xl lg:text-2xl cormorant-infant-regular text-stone-100'>{project.description}</p>
             <div className='buttons flex mt-6 lg:mt-20 gap-12 lg:gap-12'>
-              <Button text='Say Hello'/>
-              <LinkButton href="/cv" text="View CV"/>
+              <LinkButton href="/cv" text="View CV &... Say Hello"/>
             </div>
           </div>
         </div>

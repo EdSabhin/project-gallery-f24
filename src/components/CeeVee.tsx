@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/global.css'
 
-import CvButton from "../components/CvButton";
+import MultiButton from "./MultiButton";
 
 const CeeVee = () => {
   return (
@@ -15,8 +15,8 @@ const CeeVee = () => {
               <h1 className="kode-mono-light text-3xl pb-6">Eduardo Sabogal</h1>
               <h2 className="gradient-text-cv kode-mono-bold text-4xl mb-12">Front-end Developer</h2>
             <div className='w-[75%] lg:w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-14'>
-              <CvButton href="assets/images/cv-ed-sabhin.pdf" download="assets/images/cv-ed-sabhin.pdf" text="Download CV" />
-              <CvButton href="/" text="Go back" arrow="&larr;"/>
+              <MultiButton href="assets/images/cv-ed-sabhin.pdf" download="assets/images/cv-ed-sabhin.pdf" text="Download CV" />
+              <MultiButton href="/" text="Go back" arrow="&larr;"/>
             </div>
           </div>
         </div>   
@@ -30,15 +30,17 @@ const CeeVee = () => {
           <h3>01</h3>
         </div>  
         <ul className="kode-mono-light flex flex-col gap-3 mb-10">
-          <a href="/" className="w-max hover:text-indigo-500">edsabhin.dev
-            <span className="pl-2 text-xl">&rarr;</span></a>
-          <a href="https://github.com/Edsabhin" className="w-max hover:text-indigo-500">github.com/Edsabhin
+          <a href="https://github.com/Edsabhin" className="w-max hover:text-indigo-500">github
+            <span className="pl-2 text-xl">&rarr;</span>
+          </a>
+          <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-max hover:text-indigo-500">linkedIn
             <span className="pl-2 text-xl">&rarr;</span>
           </a>
           <a href="mailto:edsabhin@yahoo.com" className="w-max hover:text-indigo-500">send e-mail
             <span className="pl-2 text-xl">&rarr;</span>
           </a>
-          <p>+57 (313)228-30-13</p>
+           <a href="/" className="w-max hover:text-indigo-500">edsabhin.dev
+            <span className="pl-2 text-xl">&rarr;</span></a>
         </ul>
       </div>
 
