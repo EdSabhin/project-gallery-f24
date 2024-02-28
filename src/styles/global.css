@@ -41,6 +41,20 @@
   border-image-slice: 1;
 }
 
+.gradient-border-cv {
+  /* Set the gradient border */
+  border-image: linear-gradient(to right, #7171bd, #d6cfb7);
+  border-image-slice: 1;
+}
+
+.gradient-text-cv {
+  background-image: linear-gradient(to right, #2c2ca4, #12b0a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Additional custom styles can be added here */
+}
+
 .gradient-cv {
   background-image: linear-gradient(
     135deg,
