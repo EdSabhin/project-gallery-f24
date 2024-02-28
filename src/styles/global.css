@@ -43,12 +43,12 @@
 
 .gradient-border-cv {
   /* Set the gradient border */
-  border-image: linear-gradient(to right, #7171bd, #d6cfb7);
+  border-image: linear-gradient(to right, #55558b, #7171bd, #efc082, #ce8bac);
   border-image-slice: 1;
 }
 
 .gradient-text-cv {
-  background-image: linear-gradient(to right, #2c2ca4, #12b0a0);
+  background-image: linear-gradient(to right, #381d81, #811d79, #f09013);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -69,9 +69,6 @@
     hsl(21deg 9% 74%) 85%,
     hsl(24deg 6% 83%) 100%
   );
-}
-.cv-button-blur-fix {
-  box-sizing: content-box;
 }
 
 /* Styling */

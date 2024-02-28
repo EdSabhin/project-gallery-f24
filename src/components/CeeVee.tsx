@@ -11,10 +11,10 @@ const CeeVee = () => {
       <div>
         <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-start items-center">
           <img src="/assets/images/cv-icon.svg" alt="" className="w-2/3 lg:w-1/3 mb-8 lg:mr-24" />
-          <div className="flex flex-col justify-start pt-4 pb-16">
-            <h1 className="kode-mono-light text-3xl">Eduardo Sabogal</h1>
-            <h2 className="gradient-text-cv kode-mono-bold text-4xl mb-12">Front-end Developer</h2>
-            <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-14'>
+          <div className="flex flex-col pt-4 pb-16">
+              <h1 className="kode-mono-light text-3xl pb-6">Eduardo Sabogal</h1>
+              <h2 className="gradient-text-cv kode-mono-bold text-4xl mb-12">Front-end Developer</h2>
+            <div className='w-[75%] lg:w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-14'>
               <CvButton href="assets/images/cv-ed-sabhin.pdf" download="assets/images/cv-ed-sabhin.pdf" text="Download CV" />
               <CvButton href="/" text="Go back" arrow="&larr;"/>
             </div>
