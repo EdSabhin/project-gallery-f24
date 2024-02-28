@@ -70,7 +70,11 @@
     hsl(24deg 6% 83%) 100%
   );
 }
+.cv-button-blur-fix {
+  box-sizing: content-box;
+}
 
+/* Styling */
 .carousel {
   height: 100vh;
   width: 100vw;
