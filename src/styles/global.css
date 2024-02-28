@@ -55,7 +55,7 @@
 }
 
 .gradient-text-cv {
-  background-image: linear-gradient(to right, #381d81, #811d79, #13f01e);
+  background-image: linear-gradient(to right, #381d81, #811d79, #03e2c1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
