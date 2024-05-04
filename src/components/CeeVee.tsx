@@ -23,23 +23,37 @@ const CeeVee = () => {
       </div>
 
       {/* Contact */}
-      <div className="flex flex-col items-center">
-        <div className='w-max gradient-border-cv border-b-4 pb-1 mt-3 mb-3 kode-mono-regular flex justify-start gap-8'>
+      <div className="flex flex-col items-center mb-4">
+        <div className='w-max gradient-border-cv border-b-4 pb-1 mt-3 mb-6 kode-mono-regular flex justify-start gap-8'>
           <h3>SAY HELLO</h3>
           <h3>01</h3>
-        </div>  
+        </div>
         <ul className="kode-mono-light flex flex-col gap-3 mb-10">
-          <a href="https://github.com/Edsabhin" className="w-max hover:text-indigo-500">github
-            <span className="pl-2 text-xl">&rarr;</span>
-          </a>
-          <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-max hover:text-indigo-500">linkedIn
-            <span className="pl-2 text-xl">&rarr;</span>
-          </a>
-          <a href="mailto:edsabhin@yahoo.com" className="w-max hover:text-indigo-500">send e-mail
-            <span className="pl-2 text-xl">&rarr;</span>
-          </a>
-           <a href="/" className="w-max hover:text-indigo-500">edsabhin.dev
-            <span className="pl-2 text-xl">&rarr;</span></a>
+
+          <div className="w-full grid grid-cols-2">
+            <a href="https://github.com/Edsabhin" className="w-max hover:text-indigo-500 cursor-pointer">github            
+            </a>
+            <a href="https://github.com/Edsabhin" className="text-end text-xl cursor-pointer">&rarr;</a>
+          </div>
+
+          <div className="w-full grid grid-cols-2">
+            <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-max hover:text-indigo-500 cursor-pointer">linkedIn
+            </a>
+            <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="text-end text-xl cursor-pointer">&rarr;</a>
+          </div>
+         
+          <div className="w-full grid grid-cols-2">
+            <a href="mailto:edsabhin@yahoo.com" className="w-max hover:text-indigo-500 cursor-pointer">send e-mail
+            </a>
+            <a href="mailto:edsabhin@yahoo.com" className="text-end text-xl cursor-pointer">&rarr;</a>
+          </div>
+          
+          <div className="w-full grid grid-cols-2">
+            <a href="/" className="w-max hover:text-indigo-500 cursor-pointer">edsabhin.dev
+           </a>
+           <a className="text-end text-xl cursor-pointer">&rarr;</a>
+          </div>
+           
         </ul>
       </div>
 
@@ -54,11 +68,11 @@ const CeeVee = () => {
           <h4 className="gradient-text-cv kode-mono-semibold mb-2">IT LOOKS SIMPLE</h4>
           <h4 className="gradient-text-cv kode-mono-semibold mb-4 text-center">- Front-end Development Internship</h4>
           <p className="kode-mono-light pb-6 mb-4 text-center ">Collaborated closely with a dynamic development team, following Agile Scrum methodologies. Worked with essential project management tools such as Jira, and fostered efficient team communication through Slack.</p>
-          <h4 className="gradient-text-cv kode-mono-semibold text-center">- Technical Writer</h4>
+          <h4 className="gradient-text-cv kode-mono-semibold text-center mb-4">- Technical Writer</h4>
           <p className="kode-mono-light pb-6 mb-4 text-center">Provided end-user documentation for a successfully launched product.</p>
-          <h4 className="gradient-text-cv kode-mono-semibold text-center"> - UX Tester</h4>
+          <h4 className="gradient-text-cv kode-mono-semibold text-center mb-4"> - UX Tester</h4>
           <p className="kode-mono-light pb-6 mb-4 text-center">Delivered timely feedback to team leaders on new product features during the staging phase of the company's flagship product.</p>
-          <h4 className="gradient-text-cv kode-mono-semibold text-center">- English Trainer</h4>
+          <h4 className="gradient-text-cv kode-mono-semibold text-center mb-4">- English Trainer</h4>
           <p className="kode-mono-light pb-10 mb-4 text-center">Conducted English daily training sessions for the Web Development and Graphic Design teams.</p>
         </div>
         <div className="flex flex-col items-center">
