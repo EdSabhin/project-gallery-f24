@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/global.css'
 
 import MultiButton from "./MultiButton";
+import ScrollToTop from './ScrollToTop';
 
 const CeeVee = () => {
   return (
@@ -24,34 +25,34 @@ const CeeVee = () => {
 
       {/* Contact */}
       <div className="flex flex-col items-center mb-4">
-        <div className='w-max gradient-border-cv border-b-4 pb-1 mt-3 mb-6 kode-mono-regular flex justify-start gap-8'>
+        <div className='w-max gradient-border-cv border-b-4 pb-1 mt-3 mb-8 kode-mono-regular flex justify-start gap-8'>
           <h3>SAY HELLO</h3>
           <h3>01</h3>
         </div>
-        <ul className="kode-mono-light flex flex-col gap-3 mb-10">
 
-          <div className="w-full grid grid-cols-2">
+        <ul className="kode-mono-light flex flex-col gap-4 mb-10">
+          <div className="w-full grid grid-cols-2 items-center">
             <a href="https://github.com/Edsabhin" className="w-max hover:text-indigo-500 cursor-pointer">github            
             </a>
-            <a href="https://github.com/Edsabhin" className="text-end text-xl cursor-pointer">&rarr;</a>
+            <a href="https://github.com/Edsabhin" className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
           </div>
 
-          <div className="w-full grid grid-cols-2">
+          <div className="w-full grid grid-cols-2 items-center">
             <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-max hover:text-indigo-500 cursor-pointer">linkedIn
             </a>
-            <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="text-end text-xl cursor-pointer">&rarr;</a>
+            <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
           </div>
          
-          <div className="w-full grid grid-cols-2">
+          <div className="w-full grid grid-cols-2 items-center">
             <a href="mailto:edsabhin@yahoo.com" className="w-max hover:text-indigo-500 cursor-pointer">send e-mail
             </a>
-            <a href="mailto:edsabhin@yahoo.com" className="text-end text-xl cursor-pointer">&rarr;</a>
+            <a href="mailto:edsabhin@yahoo.com" className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
           </div>
           
-          <div className="w-full grid grid-cols-2">
+          <div className="w-full grid grid-cols-2 items-center">
             <a href="/" className="w-max hover:text-indigo-500 cursor-pointer">edsabhin.dev
            </a>
-           <a className="text-end text-xl cursor-pointer">&rarr;</a>
+           <a className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
           </div>
            
         </ul>
@@ -149,8 +150,9 @@ const CeeVee = () => {
             <h4 className="gradient-text-cv text-3xl cormorant-infant-medium-italic mb-12">Associate of Arts</h4>
             <h4 className="w-max gradient-border-cv kode-mono-light border-t-2 px-3 py-1 mb-4 shadow shadow-indigo-950">2007</h4>
             <h4 className="gradient-text-cv kode-mono-semibold text-center mb-2">Lycée Français Louis Pasteur</h4>
-            <h4 className="gradient-text-cv gradient-border-cv text-3xl cormorant-infant-medium-italic pb-8 border-b-2 ">Baccalauréat Français</h4>
-          </div>
+            <h4 className="gradient-text-cv gradient-border-cv text-3xl cormorant-infant-medium-italic pb-8 border-b-2 mb-10 ">Baccalauréat Français</h4>
+        </div>
+        <ScrollToTop/>
       </div>
     </div>
   )

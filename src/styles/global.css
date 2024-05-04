@@ -298,6 +298,22 @@
   }
 }
 
+@keyframes textColorAnimation {
+  0% {
+    color: #b176ff;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #b176ff;
+  }
+}
+
+.text-color-animation {
+  animation: textColorAnimation 1.75s infinite alternate;
+}
+
 /*Cormorant SC*/
 .cormorant-sc-light {
   font-family: "Cormorant SC", serif;
