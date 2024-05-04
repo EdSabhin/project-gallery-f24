@@ -52,7 +52,7 @@ const CeeVee = () => {
           <div className="w-full grid grid-cols-2 items-center">
             <a href="/" className="w-max hover:text-indigo-500 cursor-pointer">edsabhin.dev
            </a>
-           <a className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
+           <a href="/" className="text-end text-xl hover:text-indigo-500 cursor-pointer">&rarr;</a>
           </div>
            
         </ul>

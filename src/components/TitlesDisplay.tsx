@@ -3,7 +3,7 @@ import LinkButton from "./LinkButton"
 
 import { projects } from "../utils/projects";
 
-const DisplayTwo = () => {
+const TitlesDisplay = () => {
   return (    
       Object.values(projects).map((project, index) => (
         <div key={index} className="item">
@@ -27,6 +27,6 @@ const DisplayTwo = () => {
   )
 }
 
-export default DisplayTwo;
+export default TitlesDisplay;
 
        
