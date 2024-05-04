@@ -124,18 +124,16 @@ const CeeVee = () => {
           <h3>LANGUAGES</h3>
           <h3>04</h3>
         </div>
-        <div className='flex flex-col gap-4 ml-6 text-center'>
-          <div className='w-full grid grid-cols-2'>
+        <div className='w-full flex justify-center pb-10 mb-4 gap-14'>
+          <div className='w-ful flex flex-col items-start gap-3'>
              <h4 className='kode-mono-light'>* ENGLISH</h4>
-             <h4 className='kode-mono-light'>C2</h4>
-          </div>
-          <div className='lg:w-[30%] grid grid-cols-2'>
              <h4 className='kode-mono-light'>* SPANISH</h4>
-             <h4 className='kode-mono-light'>C2</h4>
+             <h4 className='kode-mono-light'>* FRENCH</h4>
           </div>
-          <div className='lg:w-[30%] grid grid-cols-2'>
-             <h4 className='kode-mono-light pr-2'>* FRENCH</h4>
-             <h4 className='kode-mono-light pb-10 mb-4'>C1</h4>
+          <div className='w-ful flex flex-col items-end gap-3'>
+             <h4 className='kode-mono-light'>C2</h4>
+             <h4 className='kode-mono-light'>C2</h4>
+             <h4 className='kode-mono-light'>C1</h4>
           </div>
         </div>
 
