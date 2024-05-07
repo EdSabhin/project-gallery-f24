@@ -12,24 +12,26 @@ export const projects: Projects[] = [
     image: "/assets/images/img1.jpg",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "Oberon's Lair",
-    description: "Description of Project 1",
+    projectTitle: "Allytera",
+    description: "A full fledged poetry reading application, featuring original design, theming and ambiance for XXIst Century lovers of verse and song.",
     href: "https://google.com",
   },
   {
     image: "/assets/images/img2.jpg",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "Fialta",
-    description: "Description of Project 2",
+    projectTitle: "AltaFi",
+    description:
+      "Currency converting tool, leveraging Frankfurter.app's API to display several daily, up-to-date data points.",
     href: "https://reddit.com",
   },
   {
     image: "/assets/images/img3.jpg",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "Stone Puzzle",
-    description: "Description of Project 3",
+    projectTitle: "LogoSense Prototype",
+    description:
+      "LogoSense for a sentence puzzle-builder, designed to assist the learner with structure visualization.",
     href: "https://youtube.com",
   },
   {
@@ -45,7 +47,7 @@ export const projects: Projects[] = [
     author: "Ed Sabhin",
     title: "Project Gallery",
     projectTitle: "Sigma Tracker",
-    description: "Description of Project 5",
+    description: "The latest cryptocurrency updates are made readily (and stylishly) available for crypto-curious traders, hodlers and degens alike.",
     href: "https://x.com",
   },
 ];
