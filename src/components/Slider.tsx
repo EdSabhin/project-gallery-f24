@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import SliderCard from "../components/SliderCard"
-import ArrowButton from './ArrowButton'
 
 import { projects } from "../utils/projects"
 

@@ -1,5 +1,6 @@
 interface Projects {
   image: string;
+  video: string;
   author: string;
   title: string;
   projectTitle: string;
@@ -10,14 +11,17 @@ interface Projects {
 export const projects: Projects[] = [
   {
     image: "/assets/images/img1.jpg",
+    video: "/assets/videos/allytera-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
     projectTitle: "Allytera",
-    description: "A full fledged poetry reading application, featuring original design, theming and ambiance for XXIst Century lovers of verse and song.",
+    description:
+      "A full fledged poetry reading application, featuring original design, theming and ambiance for 21st Century lovers of verse and song.",
     href: "https://google.com",
   },
   {
     image: "/assets/images/img2.jpg",
+    video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
     projectTitle: "AltaFi",
@@ -27,27 +31,22 @@ export const projects: Projects[] = [
   },
   {
     image: "/assets/images/img3.jpg",
+    video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "LogoSense Prototype",
+    projectTitle: "Word Glyph",
     description:
-      "LogoSense for a sentence puzzle-builder, designed to assist the learner with structure visualization.",
+      "Prototype for a sentence builder, designed to assist the learner with syntax visualization. © 2024 Ed Sabhin. All rights reserved.",
     href: "https://youtube.com",
   },
   {
     image: "/assets/images/img4.jpg",
-    author: "Ed Sabhin",
-    title: "Project Gallery",
-    projectTitle: "Bloomhaven",
-    description: "Description of Project 4",
-    href: "https://x.com",
-  },
-  {
-    image: "/assets/images/img4.jpg",
+    video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
     projectTitle: "Sigma Tracker",
-    description: "The latest cryptocurrency updates are made readily (and stylishly) available for crypto-curious traders, hodlers and degens alike.",
+    description:
+      "The latest cryptocurrency updates are made readily (and stylishly) available for crypto-curious traders, hodlers and degens alike.",
     href: "https://x.com",
   },
 ];
