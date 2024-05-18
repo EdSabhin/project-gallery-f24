@@ -9,13 +9,6 @@ interface sliderCardProps {
 }
 
 const SliderCard = ({image, title, description, href}:sliderCardProps) => {
-  const trimDescription = (description, numberOfWords) => {
-      const wordsArray = description.split(" ");
-
-      const trimmedDescription = wordsArray.slice(0, numberOfWords);
-      return trimmedDescription.join(" ") + " ...";
-  }
-  
   return (
     <div className='item'>
       <CardButton href={href} text='View Project' className="absolute left-[0%] rounded-tl-3xl  rounded"/>  
@@ -23,7 +16,7 @@ const SliderCard = ({image, title, description, href}:sliderCardProps) => {
       <div className="absolute bottom-0 px-4 pb-4">
         <h2 className="title text-base cormorant-infant-medium-italic 
             text-rose-500">{title}</h2>
-        <p className="text-stone-100 text-base cormorant-infant-regular">{trimDescription(description, 5)}</p>
+        <p className="trimmed-description text-stone-100 text-base cormorant-infant-regular">{description}</p>
       </div>
     </div>
   )

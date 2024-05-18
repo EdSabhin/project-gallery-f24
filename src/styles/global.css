@@ -26,7 +26,7 @@
   font-style: normal;
 }
 
-/* custom Tailwind classes */
+/* Custom Tailwind classes */
 .button-transparent {
   background-image: linear-gradient(
     to bottom right,
@@ -35,14 +35,12 @@
   );
 }
 
-.gradient-border {
-  /* Set the gradient border */
+.gradient-border {  
   border-image: linear-gradient(to right, #d6cfb7, #7171bd);
   border-image-slice: 1;
 }
 
-.gradient-border-cv {
-  /* Set the gradient border */
+.gradient-border-cv { 
   border-image: linear-gradient(to right, #55558b, #7171bd, #efc082, #ce8bac);
   border-image-slice: 1;
 }
@@ -104,7 +102,7 @@
   color: #eee;
 } */
 
-/* thumbnail */
+/* Thumbnail */
 .thumbnail {
   position: absolute;
   bottom: 50px;
@@ -130,6 +128,16 @@
   bottom: 10px;
   left: 10px;
   right: 10px;
+}
+
+/*Trimmed description for SliderCard*/
+.trimmed-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em; /* Adjust this value depending on your line-height */
 }
 
 /* animation */
