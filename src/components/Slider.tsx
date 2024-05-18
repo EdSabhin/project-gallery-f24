@@ -10,8 +10,8 @@ const Slider = () => {
         {Object.values(projects).map((project, index) => (
         <SliderCard
           key={index}
-          image={project.image}
-          title={(project.projectTitle).toUpperCase()}
+          video={project.video}
+          title={project.projectTitle}
           description={project.description}
           href={project.href}
         />

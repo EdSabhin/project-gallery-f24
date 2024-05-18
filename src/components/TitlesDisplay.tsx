@@ -1,10 +1,13 @@
-import Button from "./Button"
+import { projects } from "../utils/projects";
+
 import LinkButton from "./LinkButton"
 
-import { projects } from "../utils/projects";
+
+
 
 
 const TitlesDisplay = () => {
+
   return (    
       Object.values(projects).map((project, index) => (
         <div key={index} className="item">
@@ -17,12 +20,11 @@ const TitlesDisplay = () => {
               {project.projectTitle.toUpperCase()}
             </h2>
             <p className='itemDescription text-xl lg:text-2xl cormorant-infant-regular text-stone-100'>{project.description}</p>
-            <div className='buttons flex flex-col mt-10 gap-10'>
+            <div className='buttons flex flex-col mt-14 gap-10'>
               <div className="flex gap-12 lg:gap-12">
-                <LinkButton href={project.href} text="Visit"/>
-                <LinkButton href="/cv" text="View CV" />  
-              </div>
-              <Button text="Demo"/> 
+                <LinkButton href={project.href} text="Visit" />
+                <LinkButton href="/cv" text="View CV" />           
+              </div>          
             </div>
           </div>
         </div>

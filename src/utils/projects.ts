@@ -11,7 +11,7 @@ interface Projects {
 
 export const projects: Projects[] = [
   {
-    image: "/assets/images/img1.jpg",
+    image: "/assets/images/bg-test.png",
     video: "/assets/videos/allytera-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
