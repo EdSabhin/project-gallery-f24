@@ -64,7 +64,7 @@ const CeeVee = () => {
               <a href="/" className="text-center hover:text-purple-700 cursor-pointer">Project Gallery</a>
             </div>
             <div className="flex justify-center">
-              <a href="mailto:edsabhin@yahoo.com" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
+              <a href="/" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
             </div>
           </div>        
         </ul>

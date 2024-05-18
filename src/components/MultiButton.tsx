@@ -5,9 +5,10 @@ interface MultiButtonProps {
   download?: string;
   text?: string;
   arrow?: string;
+  openVideo?: string;
 }
 
-const MultiButton = ({href, download, text, arrow}: MultiButtonProps) => {
+const MultiButton = ({href, download, text, arrow, openVideo}: MultiButtonProps) => {
   return (
     <>
       <a href={href} download={download} className="relative inline-fle h-12 overflow-hidden rounded-full p-[1.15px] lg:p-[1.32px]">
