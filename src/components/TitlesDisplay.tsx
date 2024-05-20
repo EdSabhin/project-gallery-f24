@@ -2,12 +2,7 @@ import { projects } from "../utils/projects";
 
 import LinkButton from "./LinkButton"
 
-
-
-
-
 const TitlesDisplay = () => {
-
   return (    
       Object.values(projects).map((project, index) => (
         <div key={index} className="item">
