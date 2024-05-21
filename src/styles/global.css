@@ -227,8 +227,8 @@
   position: absolute;
   z-index: 1000;
   width: 0%;
-  height: 5.3px;
-  background-image: linear-gradient(to left, rgb(130, 117, 107), #ffffff);
+  height: 5.8px;
+  background-image: linear-gradient(to left, rgb(255, 0, 68), #ffffff);
   left: 0;
   top: 0;
 }
