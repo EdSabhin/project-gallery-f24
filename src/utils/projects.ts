@@ -1,6 +1,7 @@
 interface Projects {
   image: string;
-  video?: string;
+  logo: string;
+  video: string;
   author: string;
   title: string;
   projectTitle: string;
@@ -11,7 +12,8 @@ interface Projects {
 
 export const projects: Projects[] = [
   {
-    image: "/assets/images/bg-allytera.jpg",
+    image: "/assets/images/bg-moons-allytera.jpg",
+    logo: "/public/assets/icons/allytera-moons.jpg",
     video: "/assets/videos/allytera-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -22,7 +24,8 @@ export const projects: Projects[] = [
     href: "https://allytera.vercel.app/ShakespearesRespite",
   },
   {
-    image: "/assets/images/bg-altafi.jpg",
+    image: "/assets/images/bg-logo-altafi.jpg",
+    logo: "",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -33,7 +36,8 @@ export const projects: Projects[] = [
     href: "https://altafi-currency.netlify.app/",
   },
   {
-    image: "/assets/images/bg-word-glyph.jpg",
+    image: "/assets/images/bg-logo-word-glyph.jpg",
+    logo: "",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -44,7 +48,8 @@ export const projects: Projects[] = [
     href: "https://word-glyph.netlify.app/",
   },
   {
-    image: "/assets/images/bg-sigma-tracker.jpg",
+    image: "/assets/images/bg-logo-sigma-tracker.jpg",
+    logo: "",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
