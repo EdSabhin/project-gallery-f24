@@ -1,6 +1,9 @@
-interface Projects {
-  image: string;
-  logo: string;
+export interface Projects {
+  id: string;
+  imageLarge: string;
+  imageMedium: string;
+  imageSmall: string;
+  imageXLarge: string;
   video: string;
   author: string;
   title: string;
@@ -12,8 +15,11 @@ interface Projects {
 
 export const projects: Projects[] = [
   {
-    image: "/assets/images/bg-moons-allytera.jpg",
-    logo: "/public/assets/icons/allytera-moons.jpg",
+    id: "allytera",
+    imageLarge: "/assets/images/bg-moons-allytera.jpg",
+    imageMedium: "/assets/images/bg-allytera.jpg",
+    imageSmall: "/assets/images/bg-allytera.jpg",
+    imageXLarge: "/assets/images/bg-allytera.jpg",
     video: "/assets/videos/allytera-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -24,8 +30,11 @@ export const projects: Projects[] = [
     href: "https://allytera.vercel.app/ShakespearesRespite",
   },
   {
-    image: "/assets/images/bg-logo-altafi.jpg",
-    logo: "",
+    id: "altafi",
+    imageLarge: "/assets/images/bg-logo-altafi.jpg",
+    imageMedium: "/assets/images/bg-altafi.jpg",
+    imageSmall: "/assets/images/bg-altafi.jpg",
+    imageXLarge: "/assets/images/bg-altafi.jpg",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -36,8 +45,11 @@ export const projects: Projects[] = [
     href: "https://altafi-currency.netlify.app/",
   },
   {
-    image: "/assets/images/bg-logo-word-glyph.jpg",
-    logo: "",
+    id: "word-glyph",
+    imageLarge: "/assets/images/bg-logo-word-glyph.jpg",
+    imageMedium: "/assets/images/bg-word-glyph.jpg",
+    imageSmall: "/assets/images/bg-word-glyph.jpg",
+    imageXLarge: "/assets/images/bg-word-glyph.jpg",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",
@@ -48,8 +60,11 @@ export const projects: Projects[] = [
     href: "https://word-glyph.netlify.app/",
   },
   {
-    image: "/assets/images/bg-logo-sigma-tracker.jpg",
-    logo: "",
+    id: "sigma-tracker",
+    imageLarge: "/assets/images/bg-logo-sigma-tracker.jpg",
+    imageMedium: "/assets/images/bg-sigma-tracker.jpg",
+    imageSmall: "/assets/images/bg-sigma-tracker.jpg",
+    imageXLarge: "/assets/images/bg-sigma-tracker.jpg",
     video: "",
     author: "Ed Sabhin",
     title: "Project Gallery",

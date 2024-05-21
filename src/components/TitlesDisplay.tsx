@@ -1,12 +1,13 @@
 import { projects } from "../utils/projects";
 
 import LinkButton from "./LinkButton"
+import ResponsiveBackground from "./ResponsiveBackground";
 
 const TitlesDisplay = () => {
   return (    
-      Object.values(projects).map((project, index) => (
-        <div key={index} className="item">
-          <img src={project.image} alt={project.alt}/>
+      Object.values(projects).map((project) => (
+        <div key={project.id} className="item">
+          <ResponsiveBackground project={project} />
           <div className='content'>
             <h1 className='author text-2xl lg:text-3xl cormorant-sc-regular text-stone-100'>{project.author}</h1>
             <h2 className='title pb-4 text-3xl lg:text-5xl cormorant-sc-semibold text-stone-100'>{project.title}</h2>
