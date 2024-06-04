@@ -7,9 +7,9 @@ const Slider = () => {
   return (
     <div>
       <div className="thumbnail flex gap-8">
-        {Object.values(projects).map((project, index) => (
+        {Object.values(projects).map((project) => (
         <SliderCard
-          key={index}
+          key={project.id}
           video={project.video}
           title={project.projectTitle}
           description={project.description}

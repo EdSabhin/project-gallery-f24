@@ -12,7 +12,8 @@ const SliderCard = ({video, title, description, href}:sliderCardProps) => {
   return (
     <div className='item relative'>
       <CardButton href={href} text='View Project' className="absolute rounded-tl-3xl rounded z-10"/>  
-      <video className='w-full h-full object-cover absolute top-0 rounded-tl-3xl rounded-br-3xl rounded ' autoPlay loop>
+      <video autoPlay loop muted 
+        playsInline className='w-full h-full object-cover absolute top-0 rounded-tl-3xl rounded-br-3xl rounded ' >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
