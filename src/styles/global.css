@@ -35,12 +35,12 @@
   );
 }
 
-.gradient-border {  
+.gradient-border {
   border-image: linear-gradient(to right, #d6cfb7, #7171bd);
   border-image-slice: 1;
 }
 
-.gradient-border-cv { 
+.gradient-border-cv {
   border-image: linear-gradient(to right, #55558b, #7171bd, #efc082, #ce8bac);
   border-image-slice: 1;
 }
@@ -133,11 +133,11 @@
 /* Trimmed description for SliderCard */
 .trimmed-description {
   display: -webkit-box;
-  -webkit-line-clamp: 2; 
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 3em; 
+  max-height: 3em;
 }
 
 /* Animation */
@@ -338,7 +338,6 @@
   animation: arrowColorAnimation 2s infinite alternate;
 }
 
-
 @keyframes yearColorAnimation {
   0% {
     color: #000000;
@@ -356,7 +355,8 @@
 }
 
 @keyframes glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
   50% {
@@ -366,6 +366,54 @@
 
 .glow-on-click:active {
   animation: glow 0.5s ease-in-out;
+}
+
+@keyframes gradient-text-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text-gradient-animation {
+  background: linear-gradient(
+    270deg,
+    #ff297f,
+    #ffc5dc,
+    #fe4196,
+    #ffc5dc,
+    #ff147e
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-text-animation 7s ease infinite;
+}
+
+.moving-gradient {
+  width: 100vh;
+  height: 100vh;
+  background: radial-gradient(ellipse, #210014, #000000, #210014);
+  background-size: 500% 500%;
+
+  animation: gradientAnimation 7s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*Cormorant SC*/
