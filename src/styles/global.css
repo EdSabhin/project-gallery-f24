@@ -228,7 +228,7 @@
   z-index: 1000;
   width: 0%;
   height: 5.6px;
-  background-image: linear-gradient(to left, rgb(255, 0, 68), #ffffff);
+  background-image: linear-gradient(to left, #ff0044, #ffffff);
   left: 0;
   top: 0;
 }
@@ -247,7 +247,6 @@
 }
 
 /* Previous Click */
-
 .carousel.prev .list .item:nth-child(2) {
   z-index: 2;
 }
@@ -401,7 +400,7 @@
   background: radial-gradient(ellipse, #210014, #000000, #210014);
   background-size: 500% 500%;
 
-  animation: gradientAnimation 7s ease infinite;
+  animation: gradientAnimation 6s ease infinite;
 }
 
 @keyframes gradientAnimation {
