@@ -1,30 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&display=swap");
 
-/* Fonts */
-.kode-mono-light {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.kode-mono-regular {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.kode-mono-semibold {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.kode-mono-bold {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
 
 /* Custom Tailwind classes */
 .button-transparent {
@@ -58,6 +33,7 @@
   background-clip: text;
   color: transparent;
 }
+
 
 /* Styling */
 .carousel {
@@ -155,6 +131,15 @@
   opacity: 0;
   animation: showContent 0.6s 1s linear 1 forwards;
 }
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .itemDescription,
+.carousel.prev .list .item:nth-child(2) .content .buttons {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: showContent 0.6s 1s linear 1 forwards;
+}
 @keyframes showContent {
   to {
     transform: translateY(0px);
@@ -174,7 +159,7 @@
   animation-delay: 1.8s !important;
 }
 
-/* Next click */
+/* Next and Prev click */
 .carousel.next .list .item:nth-child(1) img {
   width: 150px;
   height: 220px;
@@ -182,6 +167,14 @@
   bottom: 50px;
   left: 50%;
 
+  animation: showImage 0.5s linear 1 forwards;
+}
+.carousel.prev .list .item:nth-child(2) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
   animation: showImage 0.5s linear 1 forwards;
 }
 @keyframes showImage {
@@ -280,7 +273,7 @@
 }
 .carousel.next .arrows button,
 .carousel.prev .arrows button {
-  pointer-events: none;
+  pointer-events: auto;
 }
 .carousel.prev .list .item:nth-child(2) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .title,
@@ -323,18 +316,18 @@
 
 @keyframes arrowColorAnimation {
   0% {
-    color: #000000;
+    color: #ffffff;
   }
   50% {
-    color: #ff8efd;
+    color: #ff3e68;
   }
   100% {
-    color: #000000;
+    color: #ffffff;
   }
 }
 
 .arrow-color-animation {
-  animation: arrowColorAnimation 2s infinite alternate;
+  animation: arrowColorAnimation 4s infinite alternate;
 }
 
 @keyframes yearColorAnimation {
@@ -413,6 +406,34 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+/* Fonts */
+/*Kode Mono*/
+.kode-mono-light {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.kode-mono-regular {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.kode-mono-semibold {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.kode-mono-bold {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*Cormorant SC*/

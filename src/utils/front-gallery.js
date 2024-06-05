@@ -24,14 +24,24 @@ function playFrontGallery() {
 
   let runTimeOut;
   let runNextAuto = setTimeout(() => {
-    next.click();
+    nextDom.click();
   }, timeAutoNext);
+
+  function resetRunningTime() {
+    timeDom.style.animation = "none";
+    timeDom.offsetHeight; // Trigger reflow
+    timeDom.style.animation = null;
+  }
 
   function showSlider(type) {
     let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
     let thumbnailItemsDom = document.querySelectorAll(
       ".carousel .thumbnail .item"
     );
+
+    // Reset animation classes
+    carouselDom.classList.remove("next");
+    carouselDom.classList.remove("prev");
 
     if (type === "next") {
       SliderDom.appendChild(SliderItemsDom[0]);
@@ -44,7 +54,11 @@ function playFrontGallery() {
       );
       carouselDom.classList.add("prev");
     }
-    
+
+    // Reset and start the running time animation
+    resetRunningTime();
+    timeDom.style.animation = `runningTime ${timeRunning / 1000}s linear`;
+
     clearTimeout(runTimeOut);
     runTimeOut = setTimeout(() => {
       carouselDom.classList.remove("next");
@@ -53,7 +67,7 @@ function playFrontGallery() {
 
     clearTimeout(runNextAuto);
     runNextAuto = setTimeout(() => {
-      next.click();
+      nextDom.click();
     }, timeAutoNext);
   }
 }
