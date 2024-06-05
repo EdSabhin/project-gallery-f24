@@ -5,4 +5,4 @@ function showCarousel() {
   mainContent.classList.add("block");
   loadingGallery.classList.add("hidden");
 }
-setTimeout(showCarousel, 100);
+setTimeout(showCarousel, 6000);

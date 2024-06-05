@@ -37,7 +37,7 @@ const CeeVee = () => {
               <a href="https://github.com/Edsabhin" className="hover:text-purple-700 cursor-pointer">GitHub</a>
             </div>
             <div className="flex justify-center">
-              <a href="https://github.com/Edsabhin" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
+              <a href="https://github.com/Edsabhin" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation-cv">&rarr;</a>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const CeeVee = () => {
               <a href="https://linkedin.com/in/eduardo-s-2b0b20179"className="hover:text-purple-700 cursor-pointer">LinkedIn</a>
             </div>
             <div className="flex justify-center">
-              <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
+              <a href="https://linkedin.com/in/eduardo-s-2b0b20179" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation-cv">&rarr;</a>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const CeeVee = () => {
               <a href="mailto:edsabhin@yahoo.com" className="hover:text-purple-700 cursor-pointer">E-mail</a>
             </div>
             <div className="flex justify-center">
-              <a href="mailto:edsabhin@yahoo.com" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
+              <a href="mailto:edsabhin@yahoo.com" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation-cv">&rarr;</a>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const CeeVee = () => {
               <a href="/" className="text-center hover:text-purple-700 cursor-pointer">Project Gallery</a>
             </div>
             <div className="flex justify-center">
-              <a href="/" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation">&rarr;</a>
+              <a href="/" className="w-[22%] lg:w-[21%] text-center text-xl hover:text-pink-400 shadow-sm shadow-purple-400 cursor-pointer rounded-full arrow-color-animation-cv">&rarr;</a>
             </div>
           </div>        
         </ul>

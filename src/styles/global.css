@@ -325,9 +325,24 @@
     color: #ffffff;
   }
 }
-
 .arrow-color-animation {
   animation: arrowColorAnimation 4s infinite alternate;
+}
+
+@keyframes arrowColorAnimationCeeVee {
+  0% {
+    color: #51ffee;
+  }
+  50% {
+    color: #ff9ae9;
+  }
+  100% {
+    color: #51ffee;
+  }
+}
+
+.arrow-color-animation-cv {
+  animation: arrowColorAnimationCeeVee 4s infinite alternate;
 }
 
 @keyframes yearColorAnimation {
