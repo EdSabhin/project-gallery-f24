@@ -68,7 +68,7 @@ export const projects: Projects[] = [
     video: "/assets/videos/sigma-tracker-video-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
-    projectTitle: "Sigma Tracker",
+    projectTitle: "Σ Tracker",
     description:
       "The latest cryptocurrency updates are made readily (and stylishly) available for crypto-curious traders, hodlers and degens alike.",
     alt: "Sigma Tracker",
