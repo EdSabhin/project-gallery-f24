@@ -113,7 +113,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 3em;
+  max-height: 1.6em;
 }
 
 /* Animation */
@@ -319,7 +319,7 @@
     color: #ffffff;
   }
   50% {
-    color: #ff3e68;
+    color: #ff83a0;
   }
   100% {
     color: #ffffff;
@@ -391,6 +391,13 @@
   background-position: center;
   height: 100vh;
   background: radial-gradient(ellipse, #210014, #000000, #210014);
+  background-size: 500% 500%;
+
+  animation: gradientAnimation 6s ease infinite;
+}
+.moving-card-gradient {
+  background-position: center;
+  background: radial-gradient(ellipse, #7b1049, #000000, #323232);
   background-size: 500% 500%;
 
   animation: gradientAnimation 6s ease infinite;

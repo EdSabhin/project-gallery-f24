@@ -1,4 +1,3 @@
-/* Trim function */
   const trimText = (description, numberOfWords) => {
       const wordsArray = description.split(" ");
 

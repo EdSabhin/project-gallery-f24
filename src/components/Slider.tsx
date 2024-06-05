@@ -13,6 +13,7 @@ const Slider = () => {
           video={project.video}
           title={project.projectTitle}
           description={project.description}
+          shortDescription = {project.shortDescription}
           href={project.href}
         />
       ))}
