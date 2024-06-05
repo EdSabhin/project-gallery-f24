@@ -396,7 +396,7 @@
 }
 
 .moving-gradient {
-  width: 100vh;
+  background-position: center;
   height: 100vh;
   background: radial-gradient(ellipse, #210014, #000000, #210014);
   background-size: 500% 500%;
