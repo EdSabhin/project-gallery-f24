@@ -34,6 +34,28 @@
   color: transparent;
 }
 
+/* Device Settings */
+@media (max-width: 640px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 641px) {
+  .desktop-only {
+    display: flex;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+
+
 
 /* Styling */
 .carousel {
