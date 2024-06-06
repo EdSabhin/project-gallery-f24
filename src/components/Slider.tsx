@@ -12,8 +12,8 @@ const Slider = () => {
           key={project.id}
           video={project.video}
           title={project.projectTitle}
-          description={project.description}
-          shortDescription = {project.shortDescription}
+          description={project.description}  
+          shortDescription={project.shortDescription}
           href={project.href}
         />
       ))}

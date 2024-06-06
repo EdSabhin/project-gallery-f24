@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 176 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,423,-1330)">
+        <g transform="matrix(1.77384,0,0,1.77384,-1485.65,-859.068)">
+            <g transform="matrix(0.921852,0,0,1,46.2756,0)">
+                <g transform="matrix(167.066,0,0,167.066,714.432,1337.79)">
+                </g>
+                <text x="592.151px" y="1337.79px" style="font-family:'HighTowerText-Reg', 'High Tower Text';font-size:167.066px;fill:url(#_Linear1);">Ω</text>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(8.79214e-15,132.366,-143.587,8.10505e-15,653.292,1234.19)"><stop offset="0" style="stop-color:rgb(103,86,0);stop-opacity:1"/><stop offset="0.11" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:rgb(62,49,0);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

@@ -106,14 +106,21 @@
   right: 10px;
 }
 
-/* Trimmed description for SliderCard */
+/* Trimmed description for Titles and SliderCard */
 .trimmed-description {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 1.6em;
+  max-height: 4em;
+}
+
+@media only screen and (max-width: 640px) {
+  .trimmed-description {
+    -webkit-line-clamp: 2; /* Show only two lines for mobile devices */
+     max-height: 3em;
+  }
 }
 
 /* Animation */
