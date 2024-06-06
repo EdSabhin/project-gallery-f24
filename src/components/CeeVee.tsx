@@ -158,9 +158,9 @@ const CeeVee = () => {
         </div>
         <div className='flex justify-center pb-10 mb-4 gap-14'>
           <div className='flex flex-col items-start gap-3 kode-mono-light'>
-            <h4><span className='arrow-color-animation text-pink-400 mr-10'>&gt;&gt;</span>ENGLISH</h4>
-            <h4><span className='arrow-color-animation text-pink-400  mr-10'>&gt;&gt;</span>SPANISH</h4>
-            <h4><span className='arrow-color-animation text-pink-400 mr-10'>&gt;&gt;</span>FRENCH</h4>
+            <h4><span className='arrow-color-animation-cv text-pink-400 mr-10'>&gt;&gt;</span>ENGLISH</h4>
+            <h4><span className='arrow-color-animation-cv text-pink-400  mr-10'>&gt;&gt;</span>SPANISH</h4>
+            <h4><span className='arrow-color-animation-cv text-pink-400 mr-10'>&gt;&gt;</span>FRENCH</h4>
           </div>
           <div className='flex flex-col items-end gap-3 kode-mono-light'>
              <h4 className="text-purple-700">C2</h4>
