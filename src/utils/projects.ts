@@ -18,10 +18,10 @@ export interface Projects {
 export const projects: Projects[] = [
   {
     id: "allytera",
-    imageLarge: "/assets/images/bg-moons-allytera.jpg",
-    imageMedium: "/assets/images/bg-allytera.jpg",
-    imageSmall: "/assets/images/bg-allytera.jpg",
-    imageXLarge: "/assets/images/bg-allytera.jpg",
+    imageLarge: "/assets/images/bg-moons-allytera-alt.jpg",
+    imageMedium: "/assets/images/bg-allytera-alt.jpg",
+    imageSmall: "/assets/images/bg-allytera-alt.jpg",
+    imageXLarge: "/assets/images/bg-allytera-alt.jpg",
     video: "/assets/videos/allytera-video-demo.mp4",
     author: "Ed Sabhin",
     title: "Project Gallery",
