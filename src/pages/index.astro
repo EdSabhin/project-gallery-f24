@@ -1,51 +1,10 @@
 ---
-import "../styles/global.css";
+import Layout from "../layouts/Layout.astro"
+import Main from "../components/Main";
 
-import LoadingGallery from "../components/LoadingGallery";
-import TitlesDisplay from "../components/TitlesDisplay";
-import Slider from "../components/Slider";
-import ArrowButton from "../components/ArrowButton";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Ed Sabhin Project Gallery</title>
-  </head>
-  <body>
-    <div id="loading-gallery">
-      <LoadingGallery />
-    </div>
-    <div id="main-content" class="hidden">
-      <div class="carousel">
-        <div class="list">
-          <TitlesDisplay />
-        </div>
-        <div class="flex flex-col items-end">
-          <div
-            class="arrows flex justify-center gap-6 lg:gap-5
-          absolute top-[77.8%] md:top-[69.7%] lg:top-[69.5%] xl:top-[72.5%] left-[12%] md:left-[20.7%] lg:left-[15.5%] xl:right-[55.5%] 2xl:right-[38%] z-10"
-          >
-            <!-- Prev ArrowButton is hidden but the transition animation works, since the arrows class is applied to both prev and next. -->
-            <ArrowButton id="prev" direction="<" aria-label="Previous Slide" />
-            <ArrowButton id="next" direction=">" aria-label="Next Slide" />
-          </div>
-          <a
-            href="/cv"
-            class="w-[4rem] rounded-bl-3xl z-10 py-[1rem] text-center text-stone-100 text-xl cormorant-infant-regular mobile-only moving-card-gradient cursor-pointer"
-            >CV</a
-          >
-        </div>
+<Layout>
+  <Main client:load/>
+</Layout>
 
-        <Slider />
-        <!-- running border effect -->
-        <div class="time"></div>
-      </div>
-    </div>
-    <script src="../utils/loading-gallery.js"></script>
-    <script src="../utils/front-gallery.js"></script>
-  </body>
-</html>
